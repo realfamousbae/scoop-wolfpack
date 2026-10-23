@@ -1,0 +1,27 @@
+{
+    "version": "0.3.0",
+    "description": "Statically typed language that compiles to readable TypeScript, Go and Rust",
+    "homepage": "https://github.com/realfamousbae/wolfpack",
+    "license": "MIT|Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/realfamousbae/wolfpack/releases/download/v0.3.0/wolfpack-windows-x64.zip",
+            "hash": "d9ad9598820e4704fd4642d9b9456c2b2867f7ba7f447f6b6dee144c9959f297"
+        }
+    },
+    "bin": "wolf.exe",
+    "notes": "To build and run programs as TypeScript, Go or Rust, install those tools with: wolf setup",
+    "checkver": {
+        "github": "https://github.com/realfamousbae/wolfpack"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/realfamousbae/wolfpack/releases/download/v$version/wolfpack-windows-x64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS.txt"
+        }
+    }
+}
